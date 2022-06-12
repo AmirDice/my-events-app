@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+    text-decoration: none;
+    text-transform: none;
+}
+body{
+    background-image: linear-gradient(19deg, #21D4FD 0%, #B721FF 100%);
+}
+.button{
+    border:2px solid #000;
+    border-radius: 20px;
+    padding:7px 20px;
+    position: absolute;
+    font-size: 15px;
+    color:#000;
+    background: #BBD1FF;
+    box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.31) inset;
+    font-size: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.button:hover{
+    color: red;
+}

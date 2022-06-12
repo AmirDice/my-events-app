@@ -1,0 +1,89 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+*{
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body{
+    height: 100%;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+}
+
+  .card{
+      width:60%;
+      height:250px;
+      border:2px solid #000;
+      border-radius: 30px;
+      margin:auto;
+      margin-bottom: 3%;
+      background-color: #12192c;
+      box-shadow: 8px 8px 5px 0px rgba(0, 0, 0, 0.31);
+      text-decoration: none;
+  
+  }
+  .card:hover{
+      background: gray;
+  }
+  .card:hover .button{
+      background: red;
+      color:#BBD1FF;
+      border:2px solid #000;
+  }
+  .cards:hover .img{
+      opacity: 0.85;
+  }
+  .cards{
+      margin: auto;
+      margin-top:5%;
+      text-decoration: none;
+  }
+  .card:hover {
+       transform: translateY(-10px);
+       transition-duration:.3s;
+  }
+  .head{
+      display:flex;
+      justify-content: center;
+  }
+  .img{
+      width:350px;
+      height:230px;
+      transform:translate(-40px);
+      margin-top:23px;
+      object-fit: cover;
+      border-radius: 20px;
+  }
+  .button{
+      border:2px solid #000;
+      border-radius: 20px;
+      padding:7px 20px;
+      position: absolute;
+      font-size: 15px;
+      color:#000;
+      background: #BBD1FF;
+      box-shadow: 3px 3px 5px 0px rgba(0, 0, 0, 0.31) inset;
+      font-size: 16px;
+      text-decoration: none;
+      cursor: pointer;
+  }
+  h3{
+      font-size: 25px;
+      color: red;
+  }
+  h4{
+      text-align: center;
+      font-size: 40px;
+      color:red;
+  }
+  h5{
+      font-size: 15px;
+       color: red;
+  }
+  p{
+      font-size: 18px;
+      color: red;
+  }
+  
+

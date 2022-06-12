@@ -1,0 +1,56 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+  }
+  .full{
+    width: 100%;
+    height: 100vh;
+    background-image: url("https://pixabay.com/get/g6d93ae6999ce1efec27165b4e8f214027ffd55b1e7e3718d252d2a09f810dce4ddf7ba6510904bf32e24aaa2a7b50c81c5a54def5bb314a061f3293af42ced8ac143160906960f23ff7c93d901323523_1920.jpg");
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    overflow: hidden;
+  }
+  span{
+    font-size: 50px;
+    font-family: 'Courgette', cursive;
+    color: white;
+    cursor: pointer;
+    float: left;
+    padding: 30px 0 0 50px;
+  }
+  button{
+    color: #fbfcfd;
+    padding: 10px 25px;
+    background: transparent;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    outline: none;
+    cursor: pointer;
+  }
+  button:hover{
+    background: #fbfcfd;
+    color: #000;
+  }
+  .content{
+    color: #fbfcfd;
+    position: absolute;
+    top: 50%;
+    left: 8%;
+    transform: translateY(-50%);
+    z-index: 2;
+  }
+  h1{
+    font-size: 80px;
+    margin: 10px 0 30px;
+    line-height: 80px;
+    color:#12192c;
+  }
+  small{
+    font-size: 25px;
+  }
+
+  
+  

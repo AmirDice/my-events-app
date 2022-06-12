@@ -1,0 +1,30 @@
+<h2 class="display-2 my-3">My Events</h2>
+<p><a class="button" href="#" routerLink="/events/new" role="button">New event</a></p>
+
+<a
+       *ngFor="let event of events"
+        routerLink="/events/1"
+        (click)="selectedEvent = event"
+        [routerLink] = "['/events', event.id]"
+      >
+    <div class="container">
+    <body>
+        <div class="card">
+            <div class="head">
+                <img class="img" src="https://pixabay.com/get/g0242b51476507d6a6f7240e8b77eb7ff3bfc13fd453c9434ff3252ce0cf5e77aabcfc391d5bcb4d7ce6aff9a6fedc0d20f533734dd5df6efeba428a10249327b1cf70650af4abc0d7735740b2c5064d2_1920.jpg" alt="image">
+            <div class="content">
+                <h5>{{event.date}}</h5>
+                <h3>{{event.title}}</h3>
+                <p>{{event.note}}<br>{{event.location}} </p>
+                <a [routerLink]="['/events', event.id, 'edit']" class="button">EDIT</a>
+            </div>
+            </div>
+        </div>
+    </body>
+    </div>
+<div *ngIf="selectedEvent" class="col">
+  <app-event-form [event]="selectedEvent" (onSave)="handleSave($event)">
+  </app-event-form>
+</div>
+
+    

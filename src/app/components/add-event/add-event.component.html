@@ -1,0 +1,28 @@
+<h2 class="display-2 my-3">Details</h2>
+<dl class="row">
+
+  <dt class="col-sm-3">Title</dt>
+  <dd class="col-sm-9">{{event.title}}</dd>
+
+  <dt class="col-sm-3">Location</dt>
+  <dd class="col-sm-9">{{event.location}}</dd>
+
+  <dt class="col-sm-3">Date</dt>
+  <dd class="col-sm-9">{{event.date}}</dd>
+
+  <dt class="col-sm-3">Note</dt>
+  <dd class="col-sm-9">{{event.note}}</dd>
+
+  <dt class="col-sm-3">User</dt>
+  <dd class="col-sm-9">Amir</dd>
+</dl>
+
+<p>
+  <a class="btn btn-primary" [routerLink]="['/events', event.id, 'edit']" role="button">Edit</a>
+  <button (click)="handleDelete()" class="btn btn-outline-danger" role="button">Delete</button>
+</p>
+
+
+
+
+
