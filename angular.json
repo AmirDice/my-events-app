@@ -103,5 +103,8 @@
       }
     }
   },
-  "defaultProject": "my-events-app"
+  "defaultProject": "my-events-app",
+  "cli": {
+    "analytics": "d7a7d245-6015-400a-858c-f4c55f0a004f"
+  }
 }
